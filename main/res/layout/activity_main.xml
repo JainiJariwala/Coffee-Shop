@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="#757575"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:textCursorDrawable="@null"
+            android:backgroundTint="@color/black"/>
+
+        <TextView
+            android:text="Toppings"
+            style="@style/HeaderTextStyle"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/cream_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Whipped cream"
+            android:textColor="#757575"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textSize="17sp"
+            android:paddingLeft="24dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:buttonTint="#795548"/>
+
+        <CheckBox
+            android:id="@+id/chocolate_box"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Chocolate"
+            android:textColor="#757575"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textSize="17sp"
+            android:paddingLeft="24dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:buttonTint="#795548"/>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginBottom="16dp"
+            android:text="@string/Quantity" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                android:onClick="decrement"
+                android:background="#795548"/>
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:onClick="increment"
+                android:background="#795548"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            android:onClick="submitOrder"
+            android:background="@drawable/rounded_corner"
+            android:textSize="20sp"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
