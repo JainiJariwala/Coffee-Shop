@@ -1,2 +1,2 @@
 # Coffee-Shop
-This app is about ordering of coffee with option of toppings and quantity.
+This app is good basic application to learn how to deal with buttons and how to add java codes with xml files.
